@@ -19,6 +19,9 @@ spring:
         - Path=/api/item/**
         filters:
         - StripPrefix=0
+        - AddRequestHeader=token-request,sasdfsafas
+        - AddResponseHeader=token-response, 1354567
+        - AddRequestParameter=name, Felipe
         - name: Cookie
           args:
             message: mensaje personalizo
