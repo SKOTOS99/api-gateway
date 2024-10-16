@@ -6,6 +6,10 @@ spring:
         uri: lb://ms-productos
         predicates:
         - Path=/api/productos/**
+        - Header=token, 12345
+        - Method=GET, POST
+        - Query=color, rojo
+        - Cookie=color, azul
         filters:
         - StripPrefix=0
         - name: Cookie

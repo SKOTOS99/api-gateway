@@ -41,7 +41,7 @@ public class GlobalFilters implements GlobalFilter, Ordered{
 				exchange.getResponse().getHeaders().add("token", tok);
 			});
 			
-			exchange.getResponse().getHeaders().setContentType(MediaType.TEXT_PLAIN);
+			//exchange.getResponse().getHeaders().setContentType(MediaType.TEXT_PLAIN);
 		}));
 	}
 
