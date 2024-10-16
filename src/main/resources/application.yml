@@ -8,9 +8,19 @@ spring:
         - Path=/api/productos/**
         filters:
         - StripPrefix=0
+        - name: Cookie
+          args:
+            message: mensaje personalizo
+            name: user
+            value: javier
       - id: ms-items
         uri: lb://ms-items
         predicates:
         - Path=/api/item/**
         filters:
         - StripPrefix=0
+        - name: Cookie
+          args:
+            message: mensaje personalizo
+            name: user
+            value: jesus
