@@ -22,6 +22,7 @@ spring:
         - AddRequestHeader=token-request,sasdfsafas
         - AddResponseHeader=token-response, 1354567
         - AddRequestParameter=name, Felipe
+        - SetResponseHeader=Content-Type, application/json
         - name: Cookie
           args:
             message: mensaje personalizo
